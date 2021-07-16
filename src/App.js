@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import RandomNumbers from './componets/RandomNumbers';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button className="btn" onClick={genRandomNumbers}>Generate Numbers</button>
+      <div className="numbers">
+        <div className="round">{numbers[0]}</div>
+        <div className="round">{numbers[1]}</div>
+        <div className="round">{numbers[2]}</div>
+        <div className="round">{numbers[3]}</div>
+        <div className="round">{numbers[4]}</div>
+      </div>
     </div>
   );
 }
